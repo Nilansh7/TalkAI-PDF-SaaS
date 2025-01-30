@@ -1,80 +1,75 @@
-![Build and Deploy Full Stack ChatPDF Clone](https://github.com/Elliott-Chong/chatpdf-yt/assets/77007117/7fcee290-ca52-46ee-ae82-3490f505270b)
+# AI SaaS Challenge Project  
 
-[Link to YouTube Tutorial](https://www.youtube.com/watch?v=bZFedu-0emE)
+Welcome to the **AI SaaS Challenge Project** repository! This project demonstrates the creation of a scalable SaaS platform that integrates cutting-edge AI technologies, user authentication, and payment processing. Built using modern frameworks and tools, this project is a complete solution for managing documents, real-time chat, and subscription-based services.  
 
-# Overview
+---
 
-Welcome to the "chatpdf-yt" project, a comprehensive chat application with PDF integration. This project is designed to provide a seamless chat experience where users can upload PDF files, create chats around them, and interact with an AI assistant. The AI assistant uses the OpenAI API to generate responses based on the chat context. The application also includes a subscription feature, where users can subscribe to access premium features. The subscription process is handled using Stripe for payments and webhooks for event processing.
+## **Features**  
+- **User Authentication**: Secure user login and role management with Clerk authentication and middleware.  
+- **Document Management**: Upload, view, delete, and download documents with seamless file handling via Firebase Storage.  
+- **Real-Time Chat**: AI-powered chat functionality using Langchain and OpenAI for document-related queries.  
+- **Payment Integration**: Subscription plans and payment processing through Stripe with webhook integration.  
+- **Scalable Design**: Built with responsive and modular components using Shadcn/UI.  
 
-hi this is a test change!
+---
 
-# Technologies and Frameworks
+## **Tech Stack**  
+- **Frontend**: Next.js, React, Shadcn/UI  
+- **Backend**: Firebase (Firestore & Storage), Stripe Webhooks  
+- **AI Integration**: Langchain, OpenAI  
+- **Authentication**: Clerk  
+- **Deployment**: Vercel  
 
-- Next.js
-- React
-- TypeScript
-- Tailwind CSS
-- Clerk
-- Drizzle ORM
-- PostgreSQL
-- AWS SDK
-- OpenAI API
-- Stripe
-- Axios
-- Pinecone
-- Drizzle-kit
-- OpenAI Edge
-- Neon Database Serverless
-- Drizzle-orm/neon-http
-- @tanstack/react-query
-- @clerk/nextjs
-- clsx
-- tailwind-merge
+---
 
-# Installation
+## **Installation**  
 
-Follow the steps below to install and setup the project:
+### Prerequisites  
+- Node.js >= 16.x  
+- Firebase account  
+- Stripe account  
+- Clerk account  
 
-1. **Clone the repository**
+### Steps  
+1. Clone the repository:  
+   ```bash  
+   git clone https://github.com/Nilansh7/ai-saas-challenge.git  
+   cd ai-saas-challenge  
+   ```  
 
-   Open your terminal and run the following command:
+2. Install dependencies:  
+   ```bash  
+   npm install  
+   ```  
 
-   ```bash
-   git clone https://github.com/Elliott-Chong/chatpdf-yt.git
-   ```
+3. Configure environment variables:  
+   Create a `.env` file with the following keys:  
+   ```env  
+   NEXT_PUBLIC_CLERK_FRONTEND_API_KEY=<Your Clerk API Key>  
+   FIREBASE_API_KEY=<Your Firebase API Key>  
+   STRIPE_SECRET_KEY=<Your Stripe Secret Key>  
+   OPENAI_API_KEY=<Your OpenAI API Key>  
+   ```  
 
-2. **Navigate to the project directory**
+4. Start the development server:  
+   ```bash  
+   npm run dev  
+   ```  
 
-   ```bash
-   cd chatpdf-yt
-   ```
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.  
 
-3. **Install Node.js**
+---
 
-   The project requires Node.js version 13.4.19 or later. You can download it from [here](https://nodejs.org/en/download/).
+## **Usage**  
+- **Upload Documents**: Log in and upload documents via the dashboard.  
+- **AI Chat**: Use the AI-powered chat to ask questions about your documents.  
+- **Manage Subscriptions**: Upgrade or downgrade plans on the pricing page.  
+- **Test Real-Time Features**: Delete, download, or modify files instantly.  
 
-4. **Install the required dependencies**
+---
 
-   Run the following command to install all the required dependencies:
+## **License**  
+This project is licensed under the MIT License.  
 
-   ```bash
-   npm install
-   ```
-
-   This will install all the dependencies listed in the `package.json` file, including Next.js, React, React DOM, Axios, Stripe, Tailwind CSS, and other specific dependencies such as "@aws-sdk/client-s3" and "@clerk/nextjs".
-
-5. **Setup environment variables**
-
-    Create a `.env` file in the root directory of your project and add the required environment variables.
-
-6. **Run the project**
-
-    Now, you can run the project using the following command:
-
-    ```bash
-    npm run dev
-    ```
-
-    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-
+## **Acknowledgments**  
+Special thanks to the **PAPA Challenge Team** for organizing this event and providing the resources to build this project.  
